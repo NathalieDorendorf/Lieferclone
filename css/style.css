@@ -1,0 +1,391 @@
+body {
+    background-color: #e1ccd3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #615b5b;
+}
+
+header {
+    background-color: #26C6DA;
+    height: 110px;
+}
+
+.favicon {
+    height: 120px;
+    width: 120px;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.icons {
+    height: 64px;
+    width: 64px;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    filter: drop-shadow(1px 1px 6px rgb(0, 0, 0, 0.6));
+}
+
+.bar {
+    width: 42px;
+    height: 6px;
+    background-color: black;
+    margin: 8px 0;
+}
+
+.restaurant {
+    width: 70%;
+}
+
+.img-header {
+    width: 100%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -170px;
+}
+
+.padding {
+    padding: 24px 24px 8px 52px;
+}
+
+.title {
+    font-family: "Homemade Apple", cursive;
+}
+
+.nav {
+    overflow-x: auto;
+    padding: 8px 12px;
+}
+
+.link {
+    border-radius: 24px;
+    width: auto;
+    display: flex;
+    padding: 8px 16px;
+}
+
+.link:hover {
+    background-color: #26C6DA;
+    cursor: pointer;
+}
+
+.img-dish {
+    max-height: 300px;
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.main-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-container {
+    max-height: 200px;
+    background-color: #d4b3be;
+    border-radius: 24px;
+    border-color: #e1ccd3;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add-icon {
+    border-radius: 24px;
+    border: 1px solid #d4b3be;
+}
+
+.add-icon:hover {
+    background-color: #26C6DA;
+    cursor: pointer;
+}
+
+.basket-container {
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 24px;
+}
+
+.basket-mobile {
+    position: fixed;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.basket-overlay {
+    background-color: #e1ccd3;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.close-btn {
+    width: 40px;
+    background-color: #26C6DA;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 24px;
+}
+
+.close-btn:hover {
+    background-color: #00a6bc;
+    cursor: pointer;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    gap: 72px;
+    height: 60%;
+    overflow-y: auto;
+}
+
+.payment-container {
+    background-color: #e1ccd3;
+    color: #26C6DA;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+}
+
+.choose {
+    border-radius: 52px;
+    background-color: #d4b3be;
+    padding: 3px;
+    font-size: 14px;
+    width: 260px;
+}
+
+.delivery {
+    border-radius: 52px;
+    background-color: #e1ccd3;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.takeaway {
+    padding: 8px 12px;
+}
+
+.dish-basket {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-basket {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.amounts {
+    display: flex;
+    gap: 16px;
+}
+
+button {
+    background-color: #26C6DA;
+    border-radius: 24px;
+    border-color: #26C6DA;
+    padding: 8px 24px;
+    font-size: 24px;
+    color: #615b5b;
+}
+
+button:hover {
+    background-color: #00a6bc;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(239,237,234);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:480px) {
+    .basket-container {
+        display: none;
+    }
+    .restaurant {
+        width: 100%;
+    }
+    header {
+        font-size: small;
+        height: 80px;
+    }
+    .favicon {
+        height: 80px;
+        width: 80px;
+    }
+    .header-right {
+        gap: 0;
+    }
+    .icons {
+        height: 48px;
+        width: 48px;
+    }
+    .bar {
+        width: 30px;
+        height: 4px;
+        margin: 6px 0;
+    }
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        display: none;
+    }
+    .padding {
+        padding: 12px 12px 8px 40px;
+    }
+    .pad {
+        padding: 8px 24px;
+    }
+    .gap {
+        gap: 8px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        top: -112px;
+    }
+    .link {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .basket-container {
+        display: none;
+    }
+    .restaurant {
+        width: 100%;
+    }
+    header {
+        font-size: small;
+        height: 90px;
+    }
+    .favicon {
+        height: 80px;
+        width: 80px;
+    }
+    .header-right {
+        gap: 0;
+    }
+    .icons {
+        height: 48px;
+        width: 48px;
+    }
+    .bar {
+        width: 30px;
+        height: 4px;
+        margin: 6px 0;
+    }
+    .link {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .basket-container {
+        display: none;
+    }
+    .restaurant {
+        width: 100%;
+    }
+}
+
+@media (max-width:1440px) and (min-width:1025px) {
+    .basket-mobile {
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
+}
+
+@media (max-width:1920px) and (min-width:1441px) {
+    .basket-mobile {
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
+}
+
+@media (min-width:1921px) {
+    .basket-mobile {
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
+}

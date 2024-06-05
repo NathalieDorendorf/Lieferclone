@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon_sushi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/standard.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom-scrollbars.css">
+    <script src="./js/JSON.js"></script>
+    <script src="./js/templates.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Sushirando</title>
+</head>
+<body id="noScroll" onload="init()">
+    <div>
+        <header class="d-flex-sb-c pad">
+            <div class="d-flex gap">
+                <img class="favicon" src="./img/icons/sushi.png" alt="Sushirando">
+                <h1>Sushirando</h1>
+            </div>
+            <div>
+                <h2>Speisekarte</h2>
+            </div>
+            <div class="header-right">
+                <img class="icons" src="./img/icons/icon-germany.png" alt="Deutsch">
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>                
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+        <main class="d-flex">
+            <section class="restaurant section-gap">
+                <div class="top-container">
+                    <img class="img-header" src="./img/sushify/header.jpg" alt="Sushify">
+                    <div class="d-flex-fs-c padding">
+                        <div class="p-relative">
+                            <img class="logo" src="./img/sushify/logo-100.png" alt="Sushify">
+                        </div>
+                        <h2 class="title">Sushify</h2>
+                    </div>
+                    <div class="d-flex-fs-c gap pad">
+                        <img class="icons" src="./img/icons/star.png" alt="Stern">
+                        <a><b>4,7</b> (200+)</a>
+                    </div>
+                    <div class="d-flex-sa-c nav">
+                        <a class="link" href="#"><img src="./img/icons/search.svg" alt="search"></a>
+                        <a class="link" href="#dishContainer0">Maki</a>
+                        <a class="link" href="#dishContainer1">Nigiri</a>
+                        <a class="link" href="#dishContainer2">Uramaki</a>
+                        <a class="link" href="#dishContainer3">Gunkan Maki</a>
+                        <a class="link" href="#dishContainer4">Sashimi</a>
+                        <a class="link" href="#dishContainer5">Cocktails</a>
+                    </div>
+                </div>
+                <div class="main-container section-gap pad" id="menuContainer">
+
+                </div>
+            </section>
+            <section class="basket-container" id="basketContainer">
+
+            </section>
+        </main>
+        <section class="basket-mobile" id="basketMobile">
+            <button id="payMobile" onclick="openCloseBasket()"><b>Warenkorb 0,00 €</b></button>
+        </section>
+        <section class="d-none" id="paymentContainer" onclick="closePayBasket()">
+            <h2>Vielen Dank für Ihre Bestellung!</h2>
+        </section>
+        <footer class="pad">
+            <div>
+                <a href="#">Ein Restaurant empfehlen</a>
+                <a href="#">Ein Restaurant melden</a>
+                <a href="#">Jobs</a>
+                <a href="#">AGB</a>
+                <a href="#">Datenschutzerklärung</a>
+                <a href="#">Impressum</a>
+                <a href="#">Verwendung von Cookies</a>
+                <a href="#">Bug Bounty</a>
+                <a href="#">Ethik-Hotline</a>
+            </div>
+            <div class="copyright d-flex">
+                <img src="./img/icons/copyright.svg" alt="Copyright">
+                <p>2024 Nathalie Dorendorf</p>
+                <a href="https://icons8.com/">Icons by Icons8</a>
+            </div>
+        </footer>        
+    </div> 
+</body>
+</html>
